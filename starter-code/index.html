@@ -13,9 +13,11 @@
 
   <header>
 
-  <img src="/starter-code/assets/shared/logo.svg">
+  <img src="/starter-code/assets/shared/logo.svg" class="logo">
 
   <hr>
+
+  <div class="header-background">
 
   <div class="header-right">
 
@@ -23,6 +25,8 @@
   <a href="#"> <span> 01 </span> Destination </a>
   <a href="#"> <span> 02 </span> Crew </a>
   <a href="#"> <span> 03 </span> Technology </a>
+
+  </div>
 
   </div>
 
@@ -36,9 +40,9 @@
 
   <h1> Space </h1>
 
-  <p> Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience! </p>
+  <p> Let's face it; if you want to go to space, you might as well <br> genuinely go to 
+  outer space and not hover kind of on the <br> edge of it. Well sit back, and relax 
+  because we'll give you <br> a truly out of this world experience! </p>
 
   </div>
 
@@ -57,8 +61,92 @@
   }
 
   header {
-    
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
   }
+
+  .header-background {
+    background-color: black;
+    padding: 5px;
+    opacity: 0.5;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 50vw;
+    height: 10vh;
+    padding-right: 20vw;
+  }
+
+  a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  hr {
+    margin-top: 5vh;
+    margin-left: 7vw;
+    width: 30vw;
+    height: 1px;
+    padding: 0;
+    opacity: 0.5;
+  }
+
+  body {
+    background: url("./assets/home/background-home-desktop.jpg");
+  }
+
+  .writing {
+    color: white;
+  }
+
+  .container {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  h3 {
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 10vh;
+  }
+
+  .writing h2 {
+    margin-bottom: 5vh;
+    font-size: 40px;
+    opacity: 0.8;
+  }
+
+  .writing h1 {
+    margin-bottom: 5vh;
+    font-size: 100px;
+  }
+
+  .writing p {
+    margin-bottom: 5vh;
+    line-height: 28px;
+    opacity: 0.8;
+  }
+
+  
 
 </style>
 
